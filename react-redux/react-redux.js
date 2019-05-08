@@ -3,6 +3,8 @@ import PropTypes from "prop-types";
 
 
 class Provider extends React.Component {
+  //1、接受通过属性传递进来的store，把store挂载到上下文中，这样当前项目中任何一个组件中，想要使用redux中的store，直接通过上下文获取即可。
+  //2、在组件的render中，把传递给Provider的子元素渲染。
   static childContextTypes = {
     store: PropTypes.object
   }
